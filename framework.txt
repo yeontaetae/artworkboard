@@ -1,0 +1,58 @@
+Purpose: To learn about the PHP file, and get use to it by creating the webste.
+
+Implementation:
+
+index.php :
+This template is the main homepage of Art by You website. 
+UPDATED:
+    Changed the sign up button, to haeds to createAccount.php
+
+about.php :
+This template is the about page of Art by You website.
+
+post.php :
+This template contains the post form, which allows to upload the file of artwork on the website(and other information about artwork).
+UPDATED:
+    Using session variable of artist ID to display artist name on the page once the user is logged in.
+    When the user is not logged in, it heads to signin.php
+    
+aboutArtist.php:
+this template contains the information of each artist from artists.php. 
+
+artists.php : 
+this template contains the information about the artists. 
+
+collections.php : 
+this template contains the collections of themes. 
+
+theme.php :
+this template contains the collections of artwork that matches the specific themes.
+
+serverlogin.php:
+This template contains the database hostname, username, password, and database name for loging to server.
+
+---NEW---
+navigation.php:
+This php contains the navigation bar 
+UPDATED:
+    Put navigation bar in a separate php file to avoid multiple same steps to modify the navigation bar. 
+    And added the sigin and signout dropdown menu. 
+
+signout.php:
+Contains the signout php codes, which it unsets all variables, destroy the session, and redirect to sign in page.
+
+signin.php:
+Contains the sign in template to allow the users sign in the website.
+    Using the database to find their username and password when they log in.
+    Using session variable to set the website status to logged in. 
+    Using the header to set destination of the webpage.
+
+createAccount.php:
+Contains the sign up template to allow the users to create the account.
+    Using the sql query to save their information of their account.
+    Using session variable to set the website status to logged in.
+    
+
+Reference:
+1. Modern Business - Template Preview - Start Bootstrap[Source code]. https://startbootstrap.com/previews/modern-business. [Date Accessed: Jan 25, 2023]
+2. pictures. CSCI 2170 - Intro to Server Side Scripting, Brightspace. https://dal.brightspace.com/d2l/le/content/248876/viewContent/3518943/View [Date Accessed: Feb.19, 2023]
